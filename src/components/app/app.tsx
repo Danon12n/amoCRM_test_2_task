@@ -20,10 +20,9 @@ const Mobile = ({ children }: any) => {
 
 function App() {
     return (
-        <div className={styles.AppWrapper}>
+        <>
             <Desktop>
-                {" "}
-                <>
+                <div className={styles.AppDesktopWrapper}>
                     <div className={styles.AppDesktopContent}>
                         <CustomHeader />
                         <PageContent />
@@ -34,16 +33,18 @@ function App() {
                     <div className={styles.AppRedBall}></div>
                     <div className={styles.AppRedBigBall}></div>
                     <div className={styles.AppPurpleBall}></div>
-                </>
+                </div>
             </Desktop>
             <Mobile>
-                <div className={styles.AppMobileContent}>
-                    <MobileHeader />
-                    <MainScreen />
-                    <MobileFooter />
+                <div className={styles.AppMobileWrapper}>
+                    <div className={styles.AppMobileContent}>
+                        <MobileHeader />
+                        <MainScreen />
+                        <MobileFooter />
+                    </div>
                 </div>
             </Mobile>
-        </div>
+        </>
     );
 }
 

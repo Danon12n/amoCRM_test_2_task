@@ -1,7 +1,13 @@
-.AppWrapper {
+.AppDesktopWrapper {
     display: flex;
     width: 100vw;
     height: 100vh;
+
+    background: #1e1e1e;
+}
+.AppMobileWrapper {
+    display: flex;
+    width: 100vw;
 
     background: #1e1e1e;
 }
@@ -115,5 +121,5 @@
 }
 
 .AppMobileContent {
-    overflow: hidden;
+    width: 100%;
 }

@@ -24,7 +24,6 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
 
-
     color: #656566;
 }
 
@@ -58,6 +57,7 @@
     gap: 5px;
 
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .underFooter p {

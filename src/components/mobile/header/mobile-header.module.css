@@ -1,9 +1,12 @@
 .mobileHeader {
     display: flex;
+    justify-content: center;
     position: fixed;
 
-    padding: 15px 20px;
+    padding: 15px 0;
     gap: 16px;
+
+    width: 100%;
 
     font-family: "Inter";
     font-style: normal;
