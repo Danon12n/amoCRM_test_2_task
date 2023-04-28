@@ -1,0 +1,47 @@
+.headerContent {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e4e5ea;
+}
+
+.headerLogo {
+    display: flex;
+    flex-direction: column;
+    color: #e4e5ea;
+
+    width: 165px;
+}
+
+.headerLogo p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.headerNavMenu {
+    display: flex;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    gap: 30px;
+}
+
+.headerTelephone {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+}
+.headerMedia {
+    display: flex;
+    gap: 34px;
+}

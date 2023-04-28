@@ -1,0 +1,128 @@
+.PageContent {
+    display: flex;
+    justify-content: space-between;
+    color: #e4e5ea;
+    z-index: 2;
+}
+
+.leftContent {
+    max-width: 370px;
+}
+
+.leftContent p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+
+    margin: 0;
+
+    color: #e4e5ea;
+}
+
+.leftContent span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+
+    background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.subText {
+    max-width: 275px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    margin-top: 30px;
+
+    color: #e4e5ea;
+}
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.rightContent button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+
+    padding: 21px 35px;
+    background: #4077f3;
+    color: #e4e5ea;
+
+    border: none;
+}
+
+.rightContent span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    color: transparent;
+    background-clip: text;
+
+    background-image: linear-gradient(90deg, #fcb045 36.99%, #fd1d1d 100%);
+}
+
+.rightContent_top {
+    max-width: 290px;
+    margin-bottom: 40px;
+    text-align: right;
+}
+
+.rightContentRow {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+.rightContentBox {
+    display: flex;
+    flex-direction: column;
+    width: 164px;
+    gap: 6px;
+    margin-bottom: 30px;
+}
+.rightContentBox_descr {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+
+    margin: 0;
+    color: #e4e5ea;
+}
+.rightContentBox_title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: right;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    margin: 0;
+
+    color: #e4e5ea;
+}
