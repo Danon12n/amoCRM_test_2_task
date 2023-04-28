@@ -8,11 +8,21 @@ import { MobileHeader } from "../mobile/header/mobile-header";
 import { MobileFooter } from "../mobile/footer/mobile-footer";
 import { MainScreen } from "../mobile/main-screen/main-screen";
 
+const Desktop = ({ children }: any) => {
+    const isDesktop = useMediaQuery({ minWidth: 501 });
+    return isDesktop ? children : null;
+};
+
+const Mobile = ({ children }: any) => {
+    const isMobile = useMediaQuery({ maxWidth: 500 });
+    return isMobile ? children : null;
+};
+
 function App() {
-    const isSmallScreen = useMediaQuery({ query: "(max-width:500)" });
     return (
         <div className={styles.AppWrapper}>
-            {!isSmallScreen ? (
+            <Desktop>
+                {" "}
                 <>
                     <div className={styles.AppDesktopContent}>
                         <CustomHeader />
@@ -25,15 +35,14 @@ function App() {
                     <div className={styles.AppRedBigBall}></div>
                     <div className={styles.AppPurpleBall}></div>
                 </>
-            ) : (
-                <>
-                    <div className={styles.AppMobileContent}>
-                        <MobileHeader />
-                        <MainScreen />
-                        <MobileFooter />
-                    </div>
-                </>
-            )}
+            </Desktop>
+            <Mobile>
+                <div className={styles.AppMobileContent}>
+                    <MobileHeader />
+                    <MainScreen />
+                    <MobileFooter />
+                </div>
+            </Mobile>
         </div>
     );
 }
